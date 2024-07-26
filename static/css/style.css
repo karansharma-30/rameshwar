@@ -1,5 +1,5 @@
 body{
-    background-color: #d32f2f;
+    background-color: #FFC300;
     height: 100%;
     width: 100%;
     
@@ -34,6 +34,15 @@ nav {
     margin-right: 0%;
 
 }
+#menu li a{
+    font-size:18px;
+    letter-spacing: 3px;
+
+}
+#menu li a:hover{
+    color: #FFF8E1;
+
+}
 
 ul li{
     padding: 0px 20px;
@@ -49,7 +58,7 @@ ul li{
 #d-menu{
     height: 100%;
     width: 100%;
-    background-color: rgb(168, 170, 172);
+    background-color: #FFF8E1;
     position: absolute;
     top: -100%;
     left: 0%;
@@ -73,7 +82,7 @@ ul li{
 }
 
 #d-menu li a:hover{
-    color: aquamarine;
+    color: #FFD54F;
 }
 
 /* responsive 425px */
