@@ -1,8 +1,8 @@
 body{
-    background-color: #FFC300;
+    /* background-color: #FFC300;
     height: 100%;
     width: 100%;
-    
+     */
 }
 
 #logo{
@@ -59,7 +59,7 @@ ul li{
     height: 100%;
     width: 100%;
     background-color: #FFF8E1;
-    position: absolute;
+    position: fixed;
     top: -100%;
     left: 0%;
     display: flex;
@@ -98,4 +98,11 @@ ul li{
     #stag li a{
        font-size: 3rem;
     }
+}
+
+/* page1 */
+
+
+video{
+    z-index: 1;
 }
