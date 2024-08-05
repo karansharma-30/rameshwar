@@ -108,3 +108,11 @@ video{
 }
 
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/static/fonts/myfont.otf') format('truetype');
+}
+
+h1{
+    font-family: 'CustomFont', sans-serif;
+}

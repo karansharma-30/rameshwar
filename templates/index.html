@@ -1,12 +1,25 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <section class="vid overflow-x-hidden">
-<video autoplay loop src="{% static 'intro.mp4' %}" type="video/mp4"></video>
-<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0"><h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">Savor the Epic Flavors of Tradition</h1></div>
+	<video autoplay loop src="{% static 'intro.mp4' %}" type="video/mp4"></video>
+	<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0">
+		<h1
+			class="absolute text-white top-[50%] left-[30%] translate-x-[-30%] translate-y-[-50%] text-[100px] text-center hidden lg:block"
+		>
+			<p class="text-[130px]">Where Tradition</p>
+			Meets Taste
+		</h1>
+	</div>
 </section>
 
-
- 
+<section class="bg-black text-center text-white p-[50px]">
+	<h1 class="text-[50px]">Rameshwar Snacks!</h1>
+	<div class=" py-10">
+		<p class="">
+			Looking for a tasty Indian snacks that you can enjoy? Rameshwar Snacks is
+			here to satisfy your cravings! <br> Made with hygine organic products and love
+			at Rameshwar Snacks!,<br> stock up on Rameshwar Snacks! today!
+		</p>
+	</div>
+</section>
 
 {% endblock %}
