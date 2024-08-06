@@ -42,7 +42,17 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            screens: {
+                'sm': '480px',  // Custom small screen size
+                'md': '769px',  // Default medium screen size
+                'lg': '1024px', // Default large screen size
+                'xl': '1280px', // Default extra large screen size
+                '2xl': '1536px', // Default 2x extra large screen size
+                'xxl': '1600px', // Custom extra extra large screen size
+                '3xl': '1800px', // Custom 3x extra large screen size
+              },
+        },
     },
     plugins: [
         /**
