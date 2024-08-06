@@ -1,6 +1,11 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <section class="vid overflow-x-hidden">
-	<video autoplay loop src="{% static 'video/intro.mp4' %}" type="video/mp4"></video>
+	<video
+		autoplay
+		loop
+		src="{% static 'video/intro.mp4' %}"
+		type="video/mp4"
+	></video>
 	<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0">
 		<h1
 			class="relative text-white top-[50%] left-[40%] translate-x-[-40%] translate-y-[-50%] text-[100px] text-center max-lg:text-[40px] max-md:top-[40%] max-sm:hidden"
@@ -13,13 +18,39 @@
 
 <section class="bg-black text-center text-white p-[50px]">
 	<h1 class="text-[50px]">Rameshwar Snacks!</h1>
-	<div class=" py-10">
+	<div class="py-10">
 		<p class="">
 			Looking for a tasty Indian snacks that you can enjoy? Rameshwar Snacks is
-			here to satisfy your cravings! <br> Made with hygine organic products and love
-			at Rameshwar Snacks!,<br> stock up on Rameshwar Snacks! today!
+			here to satisfy your cravings! <br />
+			Made with hygine organic products and love at Rameshwar Snacks!,<br />
+			stock up on Rameshwar Snacks! today!
 		</p>
 	</div>
 </section>
+
+<!-- scroll animation -->
+
+<div class="container2">
+	<div class="description panel blue">
+		<div>
+			SCROLL DOWN
+			<div class="scroll-down"><div class="arrow"></div></div>
+		</div>
+	</div>
+
+	<section class="panel red">ONE</section>
+	<section class="panel orange">TWO</section>
+	<section class="panel purple">THREE</section>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 {% endblock %}
