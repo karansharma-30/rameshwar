@@ -1,13 +1,13 @@
 {% load static %}
 <header>
 	<nav class="z-10 max-md:relative ">
-		<img src="{% static 'images/Log.png' %}" alt="logo" id="logo" />
+		<a href="{% url 'home' %}"><img src="{% static 'images/Log.png' %}" alt="logo" id="logo" /></a>
 		<div id="menu">
-			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">snacks</a></li>
+			<ul id="menu2">
+				<li><a href="{% url 'home' %}">home</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+				<li><a href="{% url 'about' %}">about</a></li>
+				<li><a href="{% url 'snacks' %}">snacks</a></li>
 			</ul>
 			
 		</div>
@@ -16,10 +16,10 @@
 
 	<div id="d-menu" class="z-20">
 		<ul id="stag">
-			<li><a href="#">home</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">about</a></li>
-			<li><a href="#">snacks</a></li>
+			<li><a href="{% url 'home' %}">home</a></li>
+			<li><a href="{% url 'contact' %}">Contact</a></li>
+			<li><a href="{% url 'about' %}">about</a></li>
+			<li><a href="{% url 'snacks' %}">snacks</a></li>
 		</ul>
 		
 		<i id="close" class="ri-close-large-fill text-[35px] cursor-pointer"></i>

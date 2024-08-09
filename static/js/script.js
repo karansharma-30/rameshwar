@@ -61,4 +61,21 @@ gsap.to(sections, {
 });
 
 
+// make menu disappear when scroll 
 
+let lastScrollTop = 0;
+const navbar = document.getElementById('menu2');
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll down: hide the navbar
+        navbar.style.top = '-80px'; // Adjust this value based on navbar height
+    } else {
+        // Scroll up: show the navbar
+        navbar.style.top = '0';
+    }
+
+    lastScrollTop = scrollTop;
+});

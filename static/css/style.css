@@ -14,12 +14,18 @@ nav {
 }
 
 #menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
+    justify-content: space-around;
+    transition: top 0.3s;
+    z-index: 1000;
 }
+
 
 #menu ul {
     display: flex;

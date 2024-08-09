@@ -19,9 +19,18 @@ from django.urls import path, include
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name="home"),
+    path('', views.home, name="home"),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name="contact"),
+    path('snacks/', views.snacks, name="snacks"),
 
  
+
+
+
+
+
+
 #  remove this later
     path("__reload__/", include("django_browser_reload.urls")),
 ]
