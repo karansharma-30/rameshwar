@@ -63,19 +63,24 @@ gsap.to(sections, {
 
 // make menu disappear when scroll 
 
-let lastScrollTop = 0;
-const navbar = document.getElementById('menu');
+document.addEventListener('DOMContentLoaded', function () {
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('menu');
 
-window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        // Scroll down: hide the navbar using GSAP
-        gsap.to(navbar, {y: '-300%', duration: 0.3, ease: 'power2.out'});
-    } else {
-        // Scroll up: show the navbar using GSAP
-        gsap.to(navbar, {y: '0%', duration: 0.3, ease: 'power2.out'});
+            if (scrollTop > lastScrollTop) {
+                // Scroll down: hide the navbar using GSAP
+                gsap.to(navbar, {y: '-300%', duration: 0.3, ease: 'power2.out'});
+            } else {
+                // Scroll up: show the navbar using GSAP
+                gsap.to(navbar, {y: '0%', duration: 0.3, ease: 'power2.out'});
+            }
+
+            lastScrollTop = scrollTop;
+        });
     }
-
-    lastScrollTop = scrollTop;
 });
+
