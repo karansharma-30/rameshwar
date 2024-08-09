@@ -1,5 +1,115 @@
-{% extends "base.html" %}
-{% block content %}
-i AM ABOUT
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- Introductory Image Section -->
+<section
+	class="relative w-full h-[60vh] bg-cover bg-center"
+	style="background-image: url('your-intro-image-url.jpg')"
+>
+	<div
+		class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+	>
+		<h1 class="text-white text-4xl md:text-6xl font-bold text-center">
+			Welcome to Our Namkeen World
+		</h1>
+	</div>
+</section>
+
+<!-- About Us Section -->
+<section class="container mx-auto px-4 py-16">
+	<div class="flex flex-col lg:flex-row items-center">
+		<div class="lg:w-1/2 lg:pr-8">
+			<img
+				src="your-about-us-image-url.jpg"
+				alt="About Us Image"
+				class="rounded-lg shadow-lg"
+			/>
+		</div>
+		<div class="lg:w-1/2 mt-8 lg:mt-0">
+			<h2
+				class="text-3xl md:text-4xl font-extrabold text-center lg:text-left mb-6"
+			>
+				About Us
+			</h2>
+			<p class="text-lg leading-relaxed text-justify">
+				We have been crafting the finest namkeen for decades, blending tradition
+				with taste to bring you the best snacks. Our journey began with a simple
+				passion for authentic flavors, and today, we continue to serve
+				delicious, quality namkeen that delights taste buds across the country.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Our Factory Section -->
+<section class="bg-white py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">
+			Our Factory
+		</h2>
+		<div class="flex flex-col-reverse lg:flex-row items-center">
+			<div class="lg:w-1/2 lg:pr-8">
+				<p class="text-lg leading-relaxed text-justify mb-6">
+					Our state-of-the-art factory ensures that every piece of namkeen is
+					crafted with the highest standards of quality and hygiene. From
+					sourcing the finest ingredients to employing the latest technologies,
+					we ensure that our products are not only delicious but also safe and
+					healthy for consumption.
+				</p>
+				<p class="text-lg leading-relaxed text-justify">
+					We invite you to visit our factory and witness the meticulous process
+					that goes into making every batch of our namkeen. Quality is at the
+					heart of everything we do, and our factory is a testament to that
+					commitment.
+				</p>
+			</div>
+			<div class="lg:w-1/2 lg:pl-8">
+				<img
+					src="your-factory-image-url.jpg"
+					alt="Our Factory Image"
+					class="rounded-lg shadow-lg mb-8 lg:mb-0"
+				/>
+			</div>
+		</div>
+		<!-- Map Section -->
+		<div class="mt-12">
+			<h3 class="text-2xl md:text-3xl font-bold text-center mb-4">
+				Our Location
+			</h3>
+			<div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+				<iframe
+					src="your-google-maps-embed-url"
+					width="100%"
+					height="100%"
+					frameborder="0"
+					style="border: 0"
+					allowfullscreen=""
+					aria-hidden="false"
+					tabindex="0"
+				></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Our Journey Section -->
+<section class="container mx-auto px-4 py-16">
+	<h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">
+		Our Journey
+	</h2>
+	<div class="text-lg leading-relaxed text-justify">
+		<p>
+			Our journey began in a small kitchen where traditional recipes were passed
+			down through generations. With a commitment to quality and a passion for
+			authentic flavors, we started our first namkeen business many years ago.
+			Over the years, our dedication has transformed us from a small local
+			business into a beloved brand recognized for its taste and trust.
+		</p>
+		<p class="mt-4">
+			From our humble beginnings to becoming a household name, our journey is a
+			testament to the hard work, innovation, and loyalty of our customers. We
+			continue to innovate and expand our offerings while staying true to the
+			flavors that started it all.
+		</p>
+	</div>
+</section>
 
 {% endblock %}
