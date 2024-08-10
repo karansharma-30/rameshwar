@@ -1,7 +1,9 @@
 {% load static %}
 <header>
 	<nav class="z-10 max-md:relative">
-		<a href="{% url 'home' %}"><img src="{% static 'images/Log.png' %}" alt="logo" id="logo" /></a>
+		<a href="{% url 'home' %}"
+			><img src="{% static 'images/Log.png' %}" alt="logo" id="logo"
+		/></a>
 		<div id="menu">
 			<ul class="text-black">
 				<li><a href="{% url 'home' %}">home</a></li>
@@ -9,9 +11,11 @@
 				<li><a href="{% url 'about' %}">about</a></li>
 				<li><a href="{% url 'snacks' %}">snacks</a></li>
 			</ul>
-			
 		</div>
-		<i id="open" class="ri-pause-large-line text-[35px] rotate-90 p-[25px] cursor-pointer text-black"></i>
+		<i
+			id="open"
+			class="ri-pause-large-line text-[35px] rotate-90 p-[25px] cursor-pointer text-black"
+		></i>
 	</nav>
 
 	<div id="d-menu" class="z-20">
@@ -20,8 +24,37 @@
 			<li><a href="{% url 'contact' %}">Contact</a></li>
 			<li><a href="{% url 'about' %}">about</a></li>
 			<li><a href="{% url 'snacks' %}">snacks</a></li>
+			<li>
+				<a href="https://www.instagram.com/shree_rameshwar_namkeen/">
+					<i
+						class="ri-instagram-line px-6 text-[40px] hover:text-pink-400 cursor-pointer"
+					></i
+				></a>
+
+				<a
+					href="https://www.facebook.com/people/Rameshwar-namkeens-and-sweets/100066442932265/?locale=fi_FI"
+				>
+					<i
+						class="ri-facebook-fill px-6 text-[40px] hover:text-blue-600 cursor-pointer"
+					></i
+				></a>
+
+				<a href="+971 542390917">
+					<i
+						class="ri-phone-fill px-6 text-[40px] hover:text-green-600 cursor-pointer"
+					></i
+				></a>
+
+				<a
+					href="https://www.linkedin.com/posts/rameshwar-namkeen-and-foods_shree-rameshwar-namkeen-activity-7167805440536383488-U4XN"
+				>
+					<i
+						class="ri-linkedin-box-fill px-6 text-[40px] hover:text-blue-400 cursor-pointer"
+					></i
+				></a>
+			</li>
 		</ul>
-		
-		<i id="close" class="ri-close-large-fill text-[35px] cursor-pointer "></i>
+
+		<i id="close" class="ri-close-large-fill text-[35px] cursor-pointer"></i>
 	</div>
 </header>

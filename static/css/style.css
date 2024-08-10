@@ -88,7 +88,7 @@ ul li {
 
 }
 
-#d-menu i {
+#close {
     position: absolute;
     top: 4%;
     right: 4%;
@@ -183,4 +183,11 @@ body {
 
 .purple {
     background-color: purple;
+}
+
+
+/* footer  */
+
+.fot a{
+    padding-left: 20px;
 }

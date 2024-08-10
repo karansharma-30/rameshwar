@@ -1,51 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
-  <!-- Introductory Image -->
-  <header class="relative w-full h-64">
-    <img src="your-image-url.jpg" alt="Introductory Image" class="object-cover w-full h-full">
-</header>
+ <!-- Introductory Image -->
+ <section class="relative">
+    <img src="your-intro-image.jpg" alt="Intro Image" class="w-full h-64 object-cover">
+    <div class="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
+        <h1 class="text-white text-4xl font-bold">Get in Touch</h1>
+    </div>
+</section>
 
-<!-- Contact Section -->
-<section class="py-8 px-4 md:px-8">
-    <div class="container mx-auto flex flex-col lg:flex-row gap-8">
-
-        <!-- Contact Form -->
-        <div class="flex-1 bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-            <form action="#" method="POST">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-md" required></textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Send</button>
-            </form>
-        </div>
-
-        <!-- Map -->
-        <div class="flex-1 bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold mb-4">Our Location</h2>
-            <div class="w-full h-64">
-                <iframe class="w-full h-full rounded-md" src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<!-- Contact Form and Map Section -->
+<section class="container mx-auto px-4 py-8 grid md:grid-cols-2 gap-8">
+    <!-- Contact Form -->
+    <div class=" p-6 ">
+        <h2 class="text-2xl font-bold mb-4">Contact Form</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-semibold">Name</label>
+                <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
-        </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-semibold">Email</label>
+                <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-semibold">Message</label>
+                <textarea id="message" class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600">Send Message</button>
+        </form>
     </div>
 
-    <!-- Contact Details -->
-    <div class="mt-8 p-6 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold mb-4">Contact Details</h2>
-        <ul class="space-y-2">
-            <li><strong>Phone:</strong> +1 234 567 890</li>
-            <li><strong>Email:</strong> info@example.com</li>
-            <li><strong>Address:</strong> 1234 Street Name, City, State, 56789</li>
-        </ul>
+    <!-- Map -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Our Location</h2>
+        <iframe class="w-full h-64 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508439!2d144.95592831531552!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43b1db9277%3A0x5045675218ce7e33!2sVictoria!5e0!3m2!1sen!2sau!4v1610914870650!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- Contact Details -->
+<section class="container mx-auto px-4 py-8 bg-white rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">Contact Details</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+        <div>
+            <h3 class="text-lg font-semibold">Address</h3>
+            <p>123 Main Street, City, Country</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold">Phone</h3>
+            <p>+123 456 7890</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold">Email</h3>
+            <p>contact@yourwebsite.com</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold">Working Hours</h3>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
     </div>
 </section>
 
