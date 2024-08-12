@@ -8,7 +8,6 @@
     .word span {
         cursor: pointer;
         display: inline-block;
-        font-size: 100px;
         user-select: none;
         line-height: 0.8;
     }
@@ -280,4 +279,4 @@
     .word span {
         -webkit-text-stroke: 2px white;
 
-    }
+}

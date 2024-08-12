@@ -78,7 +78,7 @@ ul li {
 #d-menu {
     height: 100%;
     width: 100%;
-    background-color: #FFF8E1;
+    background-color: #000000;
     position: fixed;
     top: -100%;
     left: 0%;
@@ -102,7 +102,7 @@ ul li {
 }
 
 #d-menu li a:hover {
-    color: #FFD54F;
+    color: #4fff67;
 }
 
 /* responsive 425px */
