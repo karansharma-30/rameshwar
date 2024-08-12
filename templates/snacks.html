@@ -43,8 +43,8 @@
         </div>
     </div>
 </div>
-<div class="container mx-auto p-6">
- <div class="text-center text-4xl p-10 font-bold underline">OUR PRODUCTS</div>
+<div class="container mx-auto p-6 justify-center items-center">
+ <div class="text-center text-4xl p-10 font-bold underline ">OUR PRODUCTS</div>
     <!-- Category Buttons -->
     <div class="flex justify-center space-x-4 mb-6">
         <button
@@ -59,7 +59,7 @@
             class="px-4 py-2 bg-green-500 text-white rounded hover:bg-orange-500 hover:text-black focus:outline-none"
             onclick="showCategory('10rs')"
         >
-            ₹10 Produ5ts
+            ₹10 Products
         </button>
         <button
             id="btn-gift"
@@ -71,13 +71,236 @@
     </div>
 
     <!-- Products -->
+     <div class="w-[100%] flex justify-center items-center">
     <div
         id="products-container"
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 items-center justify-evenly w-[100vh] "
     >
         <!-- Products will be displayed here based on selection -->
     </div>
 </div>
+</div>
+
+<script>
+      // Product Data
+
+  const products = {
+    "5rs": [
+        {
+            name: "Bhujia",
+            price: "₹5",
+            image: "{% static 'snacks/bhujia.png' %}",
+        },
+        {
+            name: "Chakna",
+            price: "₹5",
+            image: "{% static 'snacks/chakna.webp' %}",
+        },
+        {
+            name: "Chana dal",
+            price: "₹5",
+            image: "{% static 'snacks/Chana.webp' %}",
+        },
+        {
+            name: "Kadka sev",
+            price: "₹5",
+            image: "{% static 'snacks/Kadka.webp' %}",
+        },
+        {
+            name: "Katori",
+            price: "₹5",
+            image: "{% static 'snacks/katoriMain.webp' %}",
+        },
+        {
+            name: "Moong dal",
+            price: "₹5",
+            image: "{% static 'snacks/moong.webp' %}",
+        },
+        {
+            name: "Pasta",
+            price: "₹5",
+            image: "{% static 'snacks/pasta.webp' %}",
+        },
+        {
+            name: "Popcorn",
+            price: "₹5",
+            image: "{% static 'snacks/popcorn.webp' %}",
+        },
+        {
+            name: "Pudina-ball",
+            price: "₹5",
+            image: "{% static 'snacks/pudina-ball.webp' %}",
+        },
+        {
+            name: "Ratlami-sev",
+            price: "₹5",
+            image: "{% static 'snacks/Ratlami.webp' %}",
+        },
+        {
+            name: "Salted-fill",
+            price: "₹5",
+            image: "{% static 'snacks/salted.webp' %}",
+        },
+        {
+            name: "Tedha-medha",
+            price: "₹5",
+            image: "{% static 'snacks/tedha-medha.webp' %}",
+        },
+    ],
+    "10rs": [
+        {
+            name: "Bhujia",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Aloo Bhujia",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Mix Namkeen",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Sev",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Chana Dal",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Moong Dal",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Peanuts",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Bhel",
+            price: "₹10",
+            image: "https://via.placeholder.com/150",
+        },
+    ],
+    gift: [
+        {
+            name: "Premium Mix",
+            price: "₹50",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Royal Bhujia",
+            price: "₹50",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Festive Pack",
+            price: "₹100",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Deluxe Namkeen",
+            price: "₹100",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Special Combo",
+            price: "₹150",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Family Pack",
+            price: "₹200",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Party Mix",
+            price: "₹250",
+            image: "https://via.placeholder.com/150",
+        },
+        {
+            name: "Celebration Pack",
+            price: "₹300",
+            image: "https://via.placeholder.com/150",
+        },
+    ],
+};
+
+// Function to show products based on category
+function showCategory(category) {
+    const container = document.getElementById("products-container");
+    container.innerHTML = ""; // Clear existing products
+
+    products[category].forEach((product) => {
+        const productCard = `
+        <div class="p-4 fade-in text-center ">
+            <div class="flex items-center justify-center"><img src="${product.image}" alt="${product.name}" class="h-[170px] w-[150px] mb-4 rounded"></div>
+            <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
+            <p class="text-gray-600">${product.price}</p>
+        </div>
+    `;
+        container.insertAdjacentHTML("beforeend", productCard);
+    });
+
+    // Add fade-in animation
+    setTimeout(() => {
+        document.querySelectorAll(".fade-in").forEach((el) => {
+            el.classList.add("fade-in-active");
+        });
+    }, 100);
+}
+
+// Show default category (₹5 Products) on page load
+showCategory("5rs");
+
+// snackhead animation
+const spans = document.querySelectorAll(".word span");
+
+spans.forEach((span, idx) => {
+    span.addEventListener("click", (e) => {
+        e.target.classList.add("active");
+    });
+    span.addEventListener("animationend", (e) => {
+        e.target.classList.remove("active");
+    });
+
+    // Initial animation
+    setTimeout(() => {
+        span.classList.add("active");
+    }, 750 * (idx + 1));
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+let lastScrollTop = 0;
+const navbar = document.getElementById('menu');
+
+if (navbar) {
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scroll down: hide the navbar using GSAP
+            gsap.to(navbar, {y: '-300%', duration: 0.3, ease: 'power2.out'});
+        } else {
+            // Scroll up: show the navbar using GSAP
+            gsap.to(navbar, {y: '0%', duration: 0.3, ease: 'power2.out'});
+        }
+
+        lastScrollTop = scrollTop;
+    });
+}
+});
+</script>
 
 
 
