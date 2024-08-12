@@ -1,5 +1,84 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-snacks
+
+</head>
+<body class="bg-gray-100 font-sans">
+<div class="sancks h-96 w-full text-center flex justify-center items-center bg-gradient-to-r from-green-700 to-green-500">
+    <div class="word text-red-600">
+        <span>R</span>
+        <span>A</span>
+        <span>M</span>
+        <span>E</span>
+        <span>S</span>
+        <span>H</span>
+        <span>W</span>
+        <span>A</span>
+        <span>R</span>
+    </div>
+</div>
+
+<h3 class="text-4xl font-bold text-center mb-8 p-5">🖤Pick Your Favorite Snack🖤</h3>
+<div class="flex justify-between h-40">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">ZOOM TOONS</div>
+            <div class="flip-card-back shadow-lg">
+            <p>
+                Rameshwar zoom toons are tasty and savory kids snacks with a wide
+                range of yummies.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front ">NAMKEEN</div>
+            <div class="flip-card-back shadow-lg">
+             <p>   
+                Rameshwar PVT. LTD. Is known for their tasty traditional Indian
+                Snacks.
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mx-auto p-6">
+ <div class="text-center text-4xl p-10 font-bold underline">OUR PRODUCTS</div>
+    <!-- Category Buttons -->
+    <div class="flex justify-center space-x-4 mb-6">
+        <button
+            id="btn-5rs"
+            class="px-4 py-2 bg-green-500 text-white rounded hover:bg-orange-500 hover:text-black focus:outline-none"
+            onclick="showCategory('5rs')"
+        >
+            ₹5 Products
+        </button>
+        <button
+            id="btn-10rs"
+            class="px-4 py-2 bg-green-500 text-white rounded hover:bg-orange-500 hover:text-black focus:outline-none"
+            onclick="showCategory('10rs')"
+        >
+            ₹10 Produ5ts
+        </button>
+        <button
+            id="btn-gift"
+            class="px-4 py-2 bg-green-500 text-white rounded hover:bg-orange-500 hover:text-black focus:outline-none"
+            onclick="showCategory('gift')"
+        >
+            Gift Packets
+        </button>
+    </div>
+
+    <!-- Products -->
+    <div
+        id="products-container"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+    >
+        <!-- Products will be displayed here based on selection -->
+    </div>
+</div>
+
+
 
 {% endblock %}

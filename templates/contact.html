@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
  <!-- Introductory Image -->
  <section class="relative">
-    <img src="your-intro-image.jpg" alt="Intro Image" class="w-full h-64 object-cover">
-    <div class="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
-        <h1 class="text-white text-4xl font-bold">Get in Touch</h1>
+    <img src="{% static 'images/spon.jpg' %}" alt="Intro Image" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-black text-4xl text-[80px] max-[426px]:text-[40px]">contact us</h3>
     </div>
 </section>
 
@@ -12,7 +13,7 @@
 <section class="container mx-auto px-4 py-8 grid md:grid-cols-2 gap-8">
     <!-- Contact Form -->
     <div class=" p-6 ">
-        <h2 class="text-2xl font-bold mb-4">Contact Form</h2>
+        <h2 class="text-2xl font-bold mb-4  text-orange-400 underline">Contact Form</h2>
         <form>
             <div class="mb-4">
                 <label for="name" class="block text-sm font-semibold">Name</label>
@@ -26,32 +27,34 @@
                 <label for="message" class="block text-sm font-semibold">Message</label>
                 <textarea id="message" class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             </div>
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600">Send Message</button>
+            <div class="flex justify-center">
+            <button type="submit" class=" bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600">Send Message</button>
+        </div>
         </form>
     </div>
 
     <!-- Map -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold mb-4">Our Location</h2>
-        <iframe class="w-full h-64 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508439!2d144.95592831531552!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43b1db9277%3A0x5045675218ce7e33!2sVictoria!5e0!3m2!1sen!2sau!4v1610914870650!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+    <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4  text-orange-400 underline">Our Location</h2>
+        <iframe class="w-full h-64 rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7162.614579233211!2d75.779268!3d26.15412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396e611384368909%3A0x31cedcd891a24c47!2sDeoli%20Rd%2C%20Rajasthan%20304001!5e0!3m2!1sen!2sin!4v1723190127591!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </section>
 
 <!-- Contact Details -->
-<section class="container mx-auto px-4 py-8 bg-white rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold mb-4">Contact Details</h2>
+<section class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4  text-orange-400 underline">Contact Details</h2>
     <div class="grid md:grid-cols-2 gap-4">
         <div>
             <h3 class="text-lg font-semibold">Address</h3>
-            <p>123 Main Street, City, Country</p>
+            <p>Plot No. 30, New Adarsh Nagar, Deoli Road, Usman Nagar, Tonk, Tonk, Rajasthan, 304001</p>
         </div>
         <div>
             <h3 class="text-lg font-semibold">Phone</h3>
-            <p>+123 456 7890</p>
+            <p>+971 542390917, +917 509136287</p>
         </div>
         <div>
             <h3 class="text-lg font-semibold">Email</h3>
-            <p>contact@yourwebsite.com</p>
+            <p>rameshwar@gmail.com</p>
         </div>
         <div>
             <h3 class="text-lg font-semibold">Working Hours</h3>

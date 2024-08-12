@@ -43,6 +43,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                custom: ['CustomFont', 'sans-serif'], // Add your custom font here
+            },
             screens: {
                 'sm': '480px',  // Custom small screen size
                 'md': '769px',  // Default medium screen size
@@ -51,7 +54,7 @@ module.exports = {
                 '2xl': '1536px', // Default 2x extra large screen size
                 'xxl': '1600px', // Custom extra extra large screen size
                 '3xl': '1800px', // Custom 3x extra large screen size
-              },
+            },
         },
     },
     plugins: [
