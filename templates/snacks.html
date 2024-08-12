@@ -149,86 +149,66 @@
     ],
     "10rs": [
         {
-            name: "Bhujia",
+            name: "Garlic tadka",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/rb.webp' %}",
         },
         {
-            name: "Aloo Bhujia",
+            name: "Falhari",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/rc.webp' %}",
         },
         {
             name: "Mix Namkeen",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/rg.png' %}",
         },
         {
-            name: "Sev",
+            name: "Bhujia",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/ri.webp' %}",
         },
         {
-            name: "Chana Dal",
+            name: "chakna",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/ro.webp' %}",
         },
         {
-            name: "Moong Dal",
+            name: "Tika mitha",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/rt.webp' %}",
         },
         {
-            name: "Peanuts",
+            name: "Ratlami sev",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/ru.webp' %}",
         },
         {
-            name: "Bhel",
+            name: "Bikaneri bhujia",
             price: "₹10",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/rv.webp' %}",
         },
     ],
     gift: [
         {
-            name: "Premium Mix",
-            price: "₹50",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Royal Bhujia",
-            price: "₹50",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Festive Pack",
-            price: "₹100",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Deluxe Namkeen",
-            price: "₹100",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Special Combo",
-            price: "₹150",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Family Pack",
-            price: "₹200",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            name: "Party Mix",
+            name: "Bikaneri bhujia",
             price: "₹250",
-            image: "https://via.placeholder.com/150",
+            image: "{% static 'snacks10/Bikaneri.webp' %}",
         },
         {
-            name: "Celebration Pack",
-            price: "₹300",
-            image: "https://via.placeholder.com/150",
+            name: "Dry fruit namkeen",
+            price: "₹250",
+            image: "{% static 'snacks10/dryfruit.webp' %}",
+        },
+        {
+            name: "Festive Ratlami sev",
+            price: "₹100",
+            image: "{% static 'snacks10/sev.webp' %}",
+        },
+        {
+            name: "Tikha_Mitha",
+            price: "₹100",
+            image: "{% static 'snacks10/Tikha_Mitha.webp' %}",
         },
     ],
 };
@@ -240,8 +220,8 @@ function showCategory(category) {
 
     products[category].forEach((product) => {
         const productCard = `
-        <div class="p-4 fade-in text-center ">
-            <div class="flex items-center justify-center"><img src="${product.image}" alt="${product.name}" class="h-[170px] w-[150px] mb-4 rounded"></div>
+        <div class="p-4 fade-in text-center">
+            <div class="flex items-center justify-center"><img src="${product.image}" alt="${product.name}" class="h-[170px] w-[150px] mb-4 rounded hover:scale-95"></div>
             <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
             <p class="text-gray-600">${product.price}</p>
         </div>
