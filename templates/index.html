@@ -8,25 +8,30 @@
 	></video>
 	<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0">
 		<h1
-			class="relative text-white top-[50%] left-[40%] translate-x-[-40%] translate-y-[-50%] text-[100px] text-center max-lg:text-[40px] max-md:top-[40%] "
+			class="relative text-white top-[50%] left-[40%] translate-x-[-40%] translate-y-[-50%] text-[100px] text-center max-lg:text-[40px] max-md:top-[40%]"
 		>
-			<p id="heading" class="text-[70px] max-lg:text-[40px] font-custom">Where Tradition</p>
+			<p id="heading" class="text-[70px] max-lg:text-[40px] font-custom">
+				Where Tradition
+			</p>
 			Meets Taste
 		</h1>
 	</div>
 </section>
 
-<section class="bg-black text-center text-white  flex  px-[400px] justify-between max-lg:p-[0px]">
-
-	
-	
-	<img class="h-[255px] mt-[10px] max-lg:hidden" src="{% static 'images/ladki.jpg' %}" alt="">
+<section
+	class="bg-black text-center text-white flex px-[400px] justify-between max-lg:p-[0px]"
+>
+	<img
+		class="h-[255px] mt-[10px] max-lg:hidden"
+		src="{% static 'images/ladki.jpg' %}"
+		alt=""
+	/>
 	<div class="p-[40px] max-[426px]:text-[12px] max-[426px]:p-0">
-		<h1 class="text-[50px] max-[426px]:text-[40px] ">Rameshwar Snacks!</h1>
-			<p>
+		<h1 class="text-[50px] max-[426px]:text-[40px]">Rameshwar Snacks!</h1>
+		<p>
 			Looking for a tasty Indian snacks that you can enjoy? Rameshwar Snacks is
-			here to satisfy your cravings! 
-			Made with hygine organic products and love at Rameshwar Snacks!,<br />
+			here to satisfy your cravings! Made with hygine organic products and love
+			at Rameshwar Snacks!,<br />
 			stock up on Rameshwar Snacks! today!
 		</p>
 	</div>
@@ -35,26 +40,66 @@
 <!-- scroll animation -->
 
 <div class="container2">
-	<div class="description panel blue">
+	<div class="description panel blue flex">
+		<div class="animation-container">
+			<div class="background-image"></div>
+			<div class="background-image"></div>
+		</div>
+
+		<div class="left z-50 w-[50%] h-full items-center">
+			<img
+				class="h-[20vh] absolute top-[20%] left-[10%]"
+				src="{% static 'images/green.webp' %}"
+				alt=""
+			/>
+			<h5
+				class="text-center text-[40px] font-black font-mono text-white absolute bottom-[40%] left-[15%]"
+			>
+				PUDINA GOODNESS
+			</h5>
+		</div>
+		<div class="right z-50 w-[50%] h-full items-center justify-center flex">
+			<img
+				class="h-[80vh] absolute"
+				src="{% static 'snacks/pudina-ball.webp' %}"
+				alt=""
+			/>
+			<div class="circle"></div>
+		</div>
 		<div>
-			SCROLL DOWN
 			<div class="scroll-down"><div class="arrow"></div></div>
 		</div>
 	</div>
 
-	<section class="panel red">ONE</section>
-	<section class="panel orange">TWO</section>
+	<section class="panel orange flex">
+		<div class="animation-container">
+			<div class="background-image"></div>
+			<div class="background-image"></div>
+		</div>
+
+		<div class="left z-50 w-[50%] h-full items-center">
+			<img
+				class="h-[20vh] absolute top-[20%] left-[10%]"
+				src="{% static 'images/tedha.png' %}"
+				alt=""
+			/>
+			<h5
+				class="text-center text-[40px] font-black font-mono text-white absolute bottom-[40%] left-[15%]"
+			>
+				PUDINA GOODNESS
+			</h5>
+		</div>
+		<div class="right z-50 w-[50%] h-full items-center justify-center flex">
+			<img
+				class="h-[80vh] absolute"
+				src="{% static 'snacks/tedha-medha.webp' %}"
+				alt=""
+			/>
+			<div class="circle bg-[#f8cb00]"></div>
+		</div>
+	</section>
+	<section class="panel narangi">TWO</section>
 	<section class="panel purple">THREE</section>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 {% endblock %}
