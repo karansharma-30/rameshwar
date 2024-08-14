@@ -44,7 +44,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                custom: ['CustomFont', 'sans-serif'], // Add your custom font here
+                customH5: ['CustomFontH5', 'sans-serif'], // Add your custom font here
+                customnav: ['CustomFontnav', 'sans-serif'], // Add your custom font here
             },
             screens: {
                 'sm': '480px',  // Custom small screen size
