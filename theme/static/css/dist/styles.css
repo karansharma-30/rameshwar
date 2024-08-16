@@ -1456,6 +1456,10 @@ select {
     top: 35%;
   }
 
+  .max-md\:top-\[33\%\] {
+    top: 33%;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -1549,6 +1553,10 @@ select {
 @media (min-width: 480px) {
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-auto {
