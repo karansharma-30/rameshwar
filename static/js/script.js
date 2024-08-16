@@ -49,16 +49,17 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = gsap.utils.toArray(".panel");
 
 gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
+    yPercent: -100 * (sections.length - 1), // Move sections vertically instead of horizontally
     ease: "none",
     scrollTrigger: {
         trigger: ".container2",
         pin: true,
         scrub: 1,
         snap: 1 / (sections.length - 1),
-        end: () => "+=" + document.querySelector(".container2").offsetWidth
+        end: () => "+=" + document.querySelector(".container2").offsetHeight,
     }
 });
+
 
 
 // make menu disappear when scroll 

@@ -86,6 +86,7 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -97,7 +98,7 @@ ul li {
 }
 
 #d-menu li a {
-    font-size: 8em;
+    font-size: 6em;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -152,15 +153,7 @@ h5 {
 /* scroll animation */
 
 
-html {
-    overflow-y: scroll;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-    overflow-scrolling: touch;
-}
-
 body {
-    overflow-y: visible;
     position: relative;
     height: unset;
 }
@@ -174,13 +167,15 @@ body {
 .container2 {
     width: 400%;
     height: 100vh;
-    display: flex;
-    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+
 }
 
 .panel {
     height: 100vh;
     width: 100vw;
+    
 }
 
 .green {

@@ -1318,6 +1318,10 @@ select {
   line-height: 1.75rem;
 }
 
+.text-\[70px\] {
+  font-size: 70px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1462,6 +1466,22 @@ select {
 @media not all and (min-width: 769px) {
   .max-md\:relative {
     position: relative;
+  }
+
+  .max-md\:top-\[\] {
+    top: ;
+  }
+
+  .max-md\:top-\[20\%\] {
+    top: 20%;
+  }
+
+  .max-md\:top-\[2\%\] {
+    top: 2%;
+  }
+
+  .max-md\:top-\[30\%\] {
+    top: 30%;
   }
 }
 
