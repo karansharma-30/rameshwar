@@ -1,18 +1,15 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <section class="vid overflow-x-hidden">
-	<video
-		autoplay
-		loop
+	<video playsinline muted autoplay loop>	<source
 		src="{% static 'video/intro.mp4' %}"
-		type="video/mp4"
 	></video>
+
 	<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0">
 		<h1
 			class="relative text-white top-[50%] left-[40%] translate-x-[-40%] translate-y-[-50%] text-center text-[80px] max-[769px]:hidden"
-		>Spice Up Your Day
-		<p id="heading" class="  font-customnav">
-				 the Rameshwar Way!
-			</p>
+		>
+			Spice Up Your Day
+			<p id="heading" class="font-customnav">the Rameshwar Way!</p>
 		</h1>
 	</div>
 </section>
@@ -20,7 +17,6 @@
 <section
 	class="bg-black text-center text-white px-[400px] justify-between max-lg:p-[0px]"
 >
-	
 	<div class="p-[40px] max-[426px]:text-[12px] max-[426px]:p-0">
 		<h1 class="text-[50px] max-[426px]:text-[20px]">Rameshwar Snacks!</h1>
 		<p>
@@ -41,7 +37,9 @@
 			<div class="background-image"></div>
 		</div>
 
-		<div class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]">
+		<div
+			class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]"
+		>
 			<img
 				class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
 				src="{% static 'images/green.webp' %}"
@@ -57,23 +55,33 @@
 						alt=""
 					/>
 					<h5 class="px-5 max-[426px]:text-[30px]">PUDINA GOODNESS</h5>
-					<img class="animate-pulse max-[426px]:h-[5vh]" src="{% static 'images/arrow.webp' %}" alt="" />
+					<img
+						class="animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
+					/>
 				</div>
 
-				<br /><a href="{% url 'snacks' %}"><button
-					class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
-				>
-					KNOW MORE
-				</button>
-			</a>
+				<br /><a href="{% url 'snacks' %}"
+					><button
+						class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
+					>
+						KNOW MORE
+					</button>
+				</a>
 			</div>
 		</div>
-		<div class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]">
-			<img id="fadein" class="w-full max-[426px]:bottom-[20%] max-[426px]:h-[40vh] max-[426px]:left-[5%] max-[426px]:absolute 
-			max-[769px]:bottom-[1%] max-[769px]:w-[80vw] max-[769px]:left-[5%] max-[769px]:absolute " src="{% static 'images/pudina.webp' %}" alt="">
+		<div
+			class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]"
+		>
 			<img
-				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%]
-				max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
+				id="fadein"
+				class="w-full max-[426px]:bottom-[20%] max-[426px]:h-[40vh] max-[426px]:left-[5%] max-[426px]:absolute max-[769px]:bottom-[1%] max-[769px]:w-[80vw] max-[769px]:left-[5%] max-[769px]:absolute"
+				src="{% static 'images/pudina.webp' %}"
+				alt=""
+			/>
+			<img
+				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%] max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
 				src="{% static 'snacks/pudina-ball.webp' %}"
 				alt=""
 			/>
@@ -81,7 +89,7 @@
 		</div>
 	</div>
 
-<!-- page 2 -->
+	<!-- page 2 -->
 
 	<section class="panel orange flex max-[426px]:block max-[769px]:block">
 		<div class="animation-container">
@@ -89,7 +97,9 @@
 			<div class="background-image"></div>
 		</div>
 
-		<div class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]">
+		<div
+			class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]"
+		>
 			<img
 				class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
 				src="{% static 'images/yellow.png' %}"
@@ -105,120 +115,139 @@
 						alt=""
 					/>
 					<h5 class="px-5 max-[426px]:text-[30px]">CRUNCHY MUNCHIES</h5>
-					<img class="animate-pulse max-[426px]:h-[5vh]" src="{% static 'images/arrow.webp' %}" alt="" />
+					<img
+						class="animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
+					/>
 				</div>
 
-				<br /><a href="{% url 'snacks' %}"><button
-					class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden" 
-				>
-					KNOW MORE
-				</button>
-			</a>
+				<br /><a href="{% url 'snacks' %}"
+					><button
+						class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
+					>
+						KNOW MORE
+					</button>
+				</a>
 			</div>
 		</div>
-		<div class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]">
+		<div
+			class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]"
+		>
 			<div class="circle bg-[#f8cb00] max-[769px]:hidden"></div>
 			<img
-			class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%]
-			max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
-			src="{% static 'snacks/tedha-medha.webp' %}"
-			alt=""
+				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%] max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
+				src="{% static 'snacks/tedha-medha.webp' %}"
+				alt=""
 			/>
 		</div>
 	</section>
-	
+
 	<!-- page-3-->
 	<section class="panel blue flex max-[426px]:block max-[769px]:block">
 		<div class="animation-container">
 			<div class="background-image"></div>
-		<div class="background-image"></div>
-	</div>
-	
-	<div class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]">
-		<img
-		class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
-		src="{% static 'images/blue.webp' %}"
-		alt=""
-		/>
+			<div class="background-image"></div>
+		</div>
+
 		<div
-		class="text-center text-[40px] font-black font-mono text-white absolute bottom-[30%] left-[15%] max-[426px]:top-[30%] max-[426px]:left-[5%] max-[769px]:top-[30%]"
+			class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]"
 		>
-		<div class="tagline flex">
 			<img
-			class="rotate-180 animate-pulse max-[426px]:h-[5vh]"
-					src="{% static 'images/arrow.webp' %}"
-					alt=""
+				class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
+				src="{% static 'images/blue.webp' %}"
+				alt=""
+			/>
+			<div
+				class="text-center text-[40px] font-black font-mono text-white absolute bottom-[30%] left-[15%] max-[426px]:top-[30%] max-[426px]:left-[5%] max-[769px]:top-[30%]"
+			>
+				<div class="tagline flex">
+					<img
+						class="rotate-180 animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
 					/>
 					<h5 class="px-5 max-[426px]:text-[30px]">40% LESS FAT</h5>
-					<img class="animate-pulse max-[426px]:h-[5vh]" src="{% static 'images/arrow.webp' %}" alt="" />
+					<img
+						class="animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
+					/>
 				</div>
-				
-				<br /><a href="{% url 'snacks' %}"> <button
-				class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
-			>
-			KNOW MORE
-		</button>
-	</a>
-		
-	</div>
-</div>
-<div class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]">
-	<div class="circle bg-[#2c6247] max-[769px]:hidden"></div>
-	<img
-	class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%]
-	max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
-	src="{% static 'snacks/katoriMain.webp' %}"
-	alt=""
-	/>
-	</div>
-</section>
 
-
-<!-- page-4 -->
-<section class="panel pink flex max-[426px]:block max-[769px]:block">
-	<div class="animation-container">
-		<div class="background-image"></div>
-	<div class="background-image"></div>
-</div>
-
-<div class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]">
-	<img
-	class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
-	src="{% static 'images/pink.webp' %}"
-	alt=""
-	/>
-	<div
-	class="text-center text-[40px] font-black font-mono text-white absolute bottom-[30%] left-[15%] max-[426px]:top-[30%] max-[426px]:left-[5%] max-[769px]:top-[30%]"
-	>
-	<div class="tagline flex">
-		<img
-		class="rotate-180 animate-pulse max-[426px]:h-[5vh]"
-				src="{% static 'images/arrow.webp' %}"
-				alt=""
-				/>
-				<h5 class="px-5 max-[426px]:text-[30px]">Jeera Magic</h5>
-				<img class="animate-pulse max-[426px]:h-[5vh]" src="{% static 'images/arrow.webp' %}" alt="" />
+				<br /><a href="{% url 'snacks' %}">
+					<button
+						class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
+					>
+						KNOW MORE
+					</button>
+				</a>
 			</div>
-			
-			<br /><a href="{% url 'snacks' %}"><button
-			class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
+		</div>
+		<div
+			class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]"
 		>
-		KNOW MORE
-	</button>
-</a>
-</div>
-</div>
-<div class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]">
-<div class="circle bg-[#6d317e] max-[769px]:hidden"></div>
-<img
-class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%]
-max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
-src="{% static 'snacks/jeera-papad.webp' %}"
-alt=""
-/>
-</div>
-</section>
-</div>
+			<div class="circle bg-[#2c6247] max-[769px]:hidden"></div>
+			<img
+				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%] max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
+				src="{% static 'snacks/katoriMain.webp' %}"
+				alt=""
+			/>
+		</div>
+	</section>
 
+	<!-- page-4 -->
+	<section class="panel pink flex max-[426px]:block max-[769px]:block">
+		<div class="animation-container">
+			<div class="background-image"></div>
+			<div class="background-image"></div>
+		</div>
+
+		<div
+			class="left z-50 w-[50%] h-full items-center max-[426px]:h-[50%] max-[769px]:h-[50%]"
+		>
+			<img
+				class="h-[20vh] absolute top-[20%] left-[15%] animate-bounce max-[426px]:h-[15vh] max-[426px]:top-[10%] max-[426px]:left-[5%] max-[769px]:top-[5%]"
+				src="{% static 'images/pink.webp' %}"
+				alt=""
+			/>
+			<div
+				class="text-center text-[40px] font-black font-mono text-white absolute bottom-[30%] left-[15%] max-[426px]:top-[30%] max-[426px]:left-[5%] max-[769px]:top-[30%]"
+			>
+				<div class="tagline flex">
+					<img
+						class="rotate-180 animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
+					/>
+					<h5 class="px-5 max-[426px]:text-[30px]">Jeera Magic</h5>
+					<img
+						class="animate-pulse max-[426px]:h-[5vh]"
+						src="{% static 'images/arrow.webp' %}"
+						alt=""
+					/>
+				</div>
+
+				<br /><a href="{% url 'snacks' %}"
+					><button
+						class="bg-black text-[20px] p-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-dashed hover:border-2 max-[426px]:hidden"
+					>
+						KNOW MORE
+					</button>
+				</a>
+			</div>
+		</div>
+		<div
+			class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]"
+		>
+			<div class="circle bg-[#6d317e] max-[769px]:hidden"></div>
+			<img
+				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%] max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
+				src="{% static 'snacks/jeera-papad.webp' %}"
+				alt=""
+			/>
+		</div>
+	</section>
+</div>
 
 {% endblock %}
