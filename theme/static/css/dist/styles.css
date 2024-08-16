@@ -839,6 +839,22 @@ select {
   top: 50%;
 }
 
+.top-\[26\%\] {
+  top: 26%;
+}
+
+.top-\[\%\] {
+  top: %;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[45\%\] {
+  top: 45%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1496,6 +1512,10 @@ select {
 
   .max-\[769px\]\:w-\[80vw\] {
     width: 80vw;
+  }
+
+  .max-\[769px\]\:text-\[20px\] {
+    font-size: 20px;
   }
 }
 
