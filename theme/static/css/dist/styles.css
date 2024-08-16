@@ -835,22 +835,6 @@ select {
   top: 20%;
 }
 
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[26\%\] {
-  top: 26%;
-}
-
-.top-\[\%\] {
-  top: %;
-}
-
-.top-\[40\%\] {
-  top: 40%;
-}
-
 .top-\[45\%\] {
   top: 45%;
 }
@@ -1318,10 +1302,6 @@ select {
   line-height: 1.75rem;
 }
 
-.text-\[70px\] {
-  font-size: 70px;
-}
-
 .font-black {
   font-weight: 900;
 }
@@ -1468,74 +1448,16 @@ select {
     position: relative;
   }
 
-  .max-md\:top-\[\] {
-    top: ;
-  }
-
-  .max-md\:top-\[20\%\] {
-    top: 20%;
-  }
-
-  .max-md\:top-\[2\%\] {
-    top: 2%;
-  }
-
   .max-md\:top-\[30\%\] {
     top: 30%;
   }
-}
 
-@media (max-width: 769px) {
-  .max-\[769px\]\:absolute {
-    position: absolute;
+  .max-md\:top-\[35\%\] {
+    top: 35%;
   }
 
-  .max-\[769px\]\:bottom-\[1\%\] {
-    bottom: 1%;
-  }
-
-  .max-\[769px\]\:bottom-\[3\%\] {
-    bottom: 3%;
-  }
-
-  .max-\[769px\]\:left-\[26\%\] {
-    left: 26%;
-  }
-
-  .max-\[769px\]\:left-\[5\%\] {
-    left: 5%;
-  }
-
-  .max-\[769px\]\:top-\[30\%\] {
-    top: 30%;
-  }
-
-  .max-\[769px\]\:top-\[5\%\] {
-    top: 5%;
-  }
-
-  .max-\[769px\]\:block {
-    display: block;
-  }
-
-  .max-\[769px\]\:hidden {
+  .max-md\:hidden {
     display: none;
-  }
-
-  .max-\[769px\]\:h-\[45vh\] {
-    height: 45vh;
-  }
-
-  .max-\[769px\]\:h-\[50\%\] {
-    height: 50%;
-  }
-
-  .max-\[769px\]\:w-\[80vw\] {
-    width: 80vw;
-  }
-
-  .max-\[769px\]\:text-\[20px\] {
-    font-size: 20px;
   }
 }
 

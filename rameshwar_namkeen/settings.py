@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
 
 GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,7 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-okx$9_dnp@3z@0&gt$_!q#n_@fv$3-)f#^kfb(df^3otg3(z*!'
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=True, cast=bool)
+DATABASE_URL = config('DATABASE_URL')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

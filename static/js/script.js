@@ -54,10 +54,26 @@ gsap.to(sections, {
     scrollTrigger: {
         trigger: ".container2",
         pin: true,
-        scrub: 1,
+        scrub: true,
         snap: 1 / (sections.length - 1),
         end: () => "+=" + document.querySelector(".container2").offsetHeight,
-    }
+        passive:true,
+    },
+      force3D: true,
+      willChange: "transform"
+});
+
+gsap.to(".animation-element", {
+    yPercent: -100,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".animation-container",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+    },
+    force3D: true,
+    willChange: "transform"
 });
 
 
