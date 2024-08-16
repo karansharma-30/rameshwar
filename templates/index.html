@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <section class="vid overflow-x-hidden">
-	<video playsinline muted autoplay loop>	<source
-		src="{% static 'video/intro.mp4' %}"
+	<video playsinline muted autoplay loop>	<source type="video/mp4"
+		src="{% static 'video/intro.mp4' %} "
 	></video>
 
 	<div id="tag1" class="absolute h-[100vh] w-[50vw] top-0 right-0 max-[769]:top-[20%]">
@@ -138,7 +138,7 @@
 		<div
 			class="right z-50 w-[50%] h-full items-center justify-center flex max-[426px]:h-[50%]"
 		>
-			<div class="circle bg-[#f8cb00] max-md:hidden"></div>
+			<div  class="circle  bg-[#f8cb00] max-md:hidden"></div>
 			<img
 				class="h-[80vh] absolute max-[426px]:bottom-[10%] max-[426px]:h-[40vh] max-[426px]:left-[10%] max-[769px]:bottom-[3%] max-[769px]:h-[45vh] max-[769px]:left-[26%]"
 				src="{% static 'snacks/tedha-medha.webp' %}"
