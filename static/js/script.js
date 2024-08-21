@@ -63,41 +63,9 @@ gsap.to(sections, {
       willChange: "transform"
 });
 
-gsap.to(".animation-element", {
-    yPercent: -100,
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".animation-container",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-    },
-    force3D: true,
-    willChange: "transform"
-});
 
 
 
-// make menu disappear when scroll 
 
-document.addEventListener('DOMContentLoaded', function () {
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('menu');
 
-    if (navbar) {
-        window.addEventListener('scroll', function() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Scroll down: hide the navbar using GSAP
-                gsap.to(navbar, {y: '-300%', duration: 0.3, ease: 'power2.out'});
-            } else {
-                // Scroll up: show the navbar using GSAP
-                gsap.to(navbar, {y: '0%', duration: 0.3, ease: 'power2.out'});
-            }
-
-            lastScrollTop = scrollTop;
-        });
-    }
-});
 
